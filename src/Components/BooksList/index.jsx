@@ -7,7 +7,11 @@ const BooksList = ({ list }) => {
           <div className="w-full ">
             <img
               className="w-full hover:scale-110 h-52"
-              src={book.formats[imgUrl]}
+              src={
+                book.formats[imgUrl]
+                  ? book.formats[imgUrl]
+                  : "https://bitsofco.de/content/images/2018/12/Screenshot-2018-12-16-at-21.06.29.png"
+              }
               alt=""
             />
           </div>
